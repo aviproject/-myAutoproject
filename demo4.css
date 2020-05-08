@@ -1,0 +1,18 @@
+h1{
+     	font-family: cursive;
+     	font-weight: bold;
+     	font-style: italic;
+     	font-size: 40px;
+     	color: brown;
+     	margin: auto;
+
+     }
+ h2{
+     	font-family: sans-serif;
+     	font-weight: lighter;
+     	font-size: 45px;
+     	color: purple;
+     	margin: inherit;
+     	font-style: normal;
+
+     }

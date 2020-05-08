@@ -1,0 +1,22 @@
+p{
+	font-family: monospace;
+	font-style:oblique;
+	font-weight: 600;
+	color: orange;
+	margin: inherit;
+	border: dotted;
+	text-align:center; 
+	text-shadow: inherit;
+	position:fixed; 
+	
+}
+h3{
+   font-family:fantasy;
+   font-size: large;
+   font-weight: 700;
+   font-style: inherit;
+   border-spacing: initial;
+   color: green;
+   text-align:center;
+   
+}
