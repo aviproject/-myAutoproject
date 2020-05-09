@@ -1,0 +1,237 @@
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="dropdown sidebar-profile-dropdown">
+          <a class="dropdown-toggle d-flex align-items-center justify-content-between" href="#" data-toggle="dropdown" id="profileDropdown1">
+            <!--<img src="../../static/adminResources/images/face29.png" alt="profile" class="sidebar-profile-icon"/>-->
+            <div>
+                <div class="nav-profile-name">{{ session['session_loginUsername'] }}</div>
+                <div class="nav-profile-designation"></div>
+            </div>
+          </a>
+          <div class="dropdown-menu navbar-dropdown dropdown-menu-left" aria-labelledby="profileDropdown1">
+            <!--<a class="dropdown-item">
+              <i class="mdi mdi-account"></i>
+              Profileerty
+            </a>-->
+            <a class="dropdown-item" href="/">
+              <i class="mdi mdi-logout"></i>
+              Logout
+            </a>
+          </div>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <div class="sidebar-title">Main</div>
+            <a class="nav-link" href="/user/loadDashboard">
+              <i class="mdi mdi-cards-variant menu-icon"></i>
+              <span class="menu-title">User Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="sidebar-title"></div>
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-heart-outline menu-icon"></i>
+              <span class="menu-title">Manage Complaint</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/user/loadComplaint">Post Complaint</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/user/viewComplaint">View Complaint</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+              <i class="mdi mdi-folder-outline menu-icon"></i>
+              <span class="menu-title">Manage Feedback</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-advanced">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/user/loadFeedback">Post Feedback</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/user/viewFeedback">View Feedback</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="mdi mdi-view-grid menu-icon"></i>
+              <span class="menu-title">Manage Designation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="/admin/loadDesignation">Add Designation</a></li>
+                <li class="nav-item"><a class="nav-link" href="/admin/viewDesignation">View Designation</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="mdi mdi-chart-pie menu-icon"></i>
+              <span class="menu-title">Manage Attendance</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin/loadAttendance">Add Attendance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/viewAttendance">View Attendance</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="mdi mdi-grid menu-icon"></i>
+              <span class="menu-title">Manage Leave Criterion</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin/loadLeave">Add Leave</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/viewLeave">View Leave</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="mdi mdi-emoticon menu-icon"></i>
+              <span class="menu-title">Manage Allowance-Deduction</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin/loadAllowanceDeduction">Add Allowance-Deduction</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/viewAllowanceDeduction">View Allowance-Deduction</a></li>
+
+              </ul>
+            </div>
+          </li>
+          -->
+
+          <!--<li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
+              <i class="mdi mdi-map menu-icon"></i>
+              <span class="menu-title">Manage Payroll</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="maps">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin/loadPayroll">Add Payroll</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/viewPayroll">View Payroll</a></li>
+
+              </ul>
+            </div>
+          </li>
+          -->
+
+
+
+       <!--   <li class="nav-item">
+            <div class="sidebar-title"></div>
+            <a class="nav-link" href="../../pages/apps/calendar.html">
+              <i class="mdi mdi-calendar-blank menu-icon"></i>
+              <span class="menu-title">Calendar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/apps/email.html">
+              <i class="mdi mdi-email-open-outline menu-icon"></i>
+              <span class="menu-title">Email</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/widgets/widgets.html">
+              <i class="mdi mdi-cube-outline menu-icon"></i>
+              <span class="menu-title">Widgets</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/apps/todo.html">
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              <span class="menu-title">Todo list</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/apps/gallery.html">
+              <i class="mdi mdi-image menu-icon"></i>
+              <span class="menu-title">Gallery</span>
+            </a>
+          </li>
+          -->
+
+
+          <!--<li class="nav-item">
+            <div class="sidebar-title"></div>
+            <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+              <i class="mdi mdi-folder-multiple-outline menu-icon"></i>
+              <span class="menu-title">Manage Letter Type</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="general-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin/loadLetterType">Add Letter Type </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/viewLetterType">View Letter Type</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#user-pages" aria-expanded="false" aria-controls="user-pages">
+                <i class="mdi mdi-file-outline menu-icon"></i>
+                <span class="menu-title">Manage PersonalLoan Detail</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="user-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="/admin/loadLoanDetail">Add Loan detail</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/admin/viewLoanDetail">View Loan detail</a></li>
+
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#error-pages" aria-expanded="false" aria-controls="error-pages">
+                <i class="mdi mdi-vector-arrange-below menu-icon"></i>
+                <span class="menu-title">Manage Medical Cover</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="error-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="/admin/loadMedicalCover">Add Medical cover </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/admin/viewMedicalcover">View Medical cover </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/admin/viewComplaint">
+              <i class="mdi mdi-image menu-icon"></i>
+              <span class="menu-title">Manage Complaint</span>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/admin/viewFeedback">
+              <i class="mdi mdi-email-open-outline menu-icon"></i>
+              <span class="menu-title">Manage Feedback</span>
+            </a>
+          </li>
+          -->
+            <!--<li class="nav-item">
+            <div class="sidebar-title">Help</div>
+            <a class="nav-link" href="http://www.urbanui.com/wagondash/docs/documentation.html" target="_blank">
+              <i class="mdi mdi-file-document menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+
+        </ul>
+        <div class="designer-info">
+            Designed by: <a href="https://www.urbanui.com/" target="_blank">Urbanui</a>
+        </div>
+      </nav>-->
+        </ul>
+      </nav>>
