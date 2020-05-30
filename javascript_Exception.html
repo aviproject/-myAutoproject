@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript Exception</title>
+	<script type="text/javascript">
+
+	 function myfn1()
+     {
+     
+          var a=20;
+
+        try
+        {
+        	alert("variable value is" +a);
+        }
+        catch(e)
+        {
+        	alert("Error:" + e.description);
+        }
+        finally
+        {
+        	alert("this block will always execute!!");
+        }
+     }
+
+</script>
+</head>
+<body>
+
+	<form>
+		<p>click on click me for result</p>
+
+
+		<input type="button" value ="Click me" onclick="myfn1()"></intput>
+
+	</form>
+
+</body>
+</html>		
